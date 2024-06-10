@@ -66,11 +66,9 @@
     </div>
     <div class="container">
         <h1>Simple JSP Form</h1>
-        <form action="process.jsp" method="post">
             <label for="name">Enter your name:</label>
             <input type="text" id="name" name="name">
-            <button type="submit">Submit</button>
-        </form>
+            <button onclick="">Click Me</button>
     </div>
 </body>
 </html>
