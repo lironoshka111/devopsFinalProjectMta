@@ -70,11 +70,19 @@
         .links a:hover {
             text-decoration: underline;
         }
+        .output {
+            margin-top: 20px;
+        }
     </style>
     <script>
-        function showAlert() {
+        function showName() {
             var name = document.getElementById("name").value;
-            alert("You entered: " + name);
+            var p = document.createElement("p");
+            p.textContent = "Hello " + name;
+
+            var outputDiv = document.getElementById("output");
+            outputDiv.innerHTML = ''; // Clear any previous output
+            outputDiv.appendChild(p);
         }
     </script>
 </head>
@@ -86,7 +94,8 @@
         <h1>Simple JSP Form</h1>
         <label for="name">Enter your name:</label>
         <input type="text" id="name" name="name">
-        <button onclick="showAlert()">Click Me</button>
+        <button onclick="showName()">Click Me</button>
+        <div id="output" class="output"></div>
     </div>
     <div class="links">
         <a href="https://www.google.com/" target="_blank">Google</a>
