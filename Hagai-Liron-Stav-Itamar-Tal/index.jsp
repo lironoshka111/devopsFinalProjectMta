@@ -58,7 +58,25 @@
         .container button:hover {
             background-color: #0056b3;
         }
+        .links {
+            margin-top: 20px;
+        }
+        .links a {
+            display: block;
+            margin-bottom: 10px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
     </style>
+    <script>
+        function showAlert() {
+            var name = document.getElementById("name").value;
+            alert("You entered: " + name);
+        }
+    </script>
 </head>
 <body>
     <div class="header">
@@ -66,9 +84,14 @@
     </div>
     <div class="container">
         <h1>Simple JSP Form</h1>
-            <label for="name">Enter your name:</label>
-            <input type="text" id="name" name="name">
-            <button onclick="">Click Me</button>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name">
+        <button onclick="showAlert()">Click Me</button>
+    </div>
+    <div class="links">
+        <a href="https://www.google.com/" target="_blank">Google</a>
+        <a href="https://www.ynet.co.il/" target="_blank">Ynet</a>
+        <a href="https://www.walla.co.il/" target="_blank">Walla</a>
     </div>
 </body>
 </html>
