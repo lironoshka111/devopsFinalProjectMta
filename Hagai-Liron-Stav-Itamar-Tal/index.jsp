@@ -92,7 +92,7 @@
     </div>
     <div class="container">
         <h1>Simple JSP Form</h1>
-        <label for="name">Enter your name:</label>
+        <label for="name">Enter Your Name:</label>
         <input type="text" id="name" name="name">
         <button onclick="showName()">Click Me!</button>
         <div id="output" class="output"></div>
