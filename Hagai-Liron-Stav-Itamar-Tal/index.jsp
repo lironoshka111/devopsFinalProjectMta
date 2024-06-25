@@ -78,7 +78,7 @@
         function showName() {
             var name = document.getElementById("name").value;
             var p = document.createElement("p");
-            p.textContent = "!Hello " + name;
+            p.textContent = "Hello " + name;
 
             var outputDiv = document.getElementById("output");
             outputDiv.innerHTML = ''; // Clear any previous output
