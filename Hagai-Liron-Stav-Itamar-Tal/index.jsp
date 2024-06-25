@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>DevOps Final Project</title>
+    <title>DevOps Final Project!</title>
     <style>
         body {
             font-family: Arial, sans-serif;
